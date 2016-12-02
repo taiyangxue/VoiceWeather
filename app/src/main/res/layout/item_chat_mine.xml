@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:paddingBottom="10dip"
+    android:paddingLeft="80dip"
+    android:paddingRight="8dip"
+    android:paddingTop="10dip">
+
+    <ImageView
+        android:id="@+id/chatlist_image_me"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dip"
+        android:background="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/chatlist_text_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/chatlist_image_me"
+        android:layout_toLeftOf="@id/chatlist_image_me"
+        android:textSize="16sp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:background="@mipmap/balloon_r_pressed"
+        android:textColor="@android:color/white"
+        android:text="会忽悠了过">
+    </TextView>
+
+</RelativeLayout>
