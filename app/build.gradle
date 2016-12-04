@@ -11,6 +11,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    task clean(type: Exec) {
+        ext.lockhunter = '\"C:\\Program Files\\LockHunter\\LockHunter.exe\"'
+        def buildDir = file(new File("build"))
+        commandLine 'cmd', "$lockhunter", '/delete', '/silent', buildDir
+    }
     buildTypes {
         release {
             minifyEnabled false
